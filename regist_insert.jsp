@@ -11,8 +11,15 @@ s4=request.getParameter("email");
 s5=request.getParameter("p_no");
 
 
-int k=s.stmt.executeUpdate("insert into Advertise values(null,'"+s1+"','"+s2+"','"+s3+"','"+s4+"','"+s5+"')");
+int k=s.stmt.executeUpdate("insert into registration_tbl values(null,'"+s1+"','"+s2+"','"+s3+"','"+s4+"','"+s5+"')");
+out.println("Username :"+s4);
+out.println("password :"+s3);
 %>
-<script>
-alert("Username"+<%=s4%>+" and Password :"+<%=s3%>+");
-</script>
+
+      
+      
+      
+    
+      
+      
+      
