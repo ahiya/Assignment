@@ -26,7 +26,7 @@
 ResultSet rs=s.stmt.executeQuery("select * from registation_tbl");
 while(rs.next())
 {
-int t=rs.getInt("Advertise_Id");
+
 %>
       <td width="124"><strong>First Name </strong></td>
       <td width="162"><input name="fname" type="text" id="fname" value="<%=rs.getString("fname")%>"></td>
