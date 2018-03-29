@@ -19,11 +19,11 @@
         <tr>
 
 <%@page import = "java.sql.*"%>
-<%@page import = "Rental.dbconnect"%>
-<jsp:useBean id="s" class="Rental.dbconnect"/>
+<%@page import = "witty.dbconnect"%>
+<jsp:useBean id="s" class="witty.dbconnect"/>
 <jsp:getProperty name="s" property="conn"/>
 <%
-ResultSet rs=s.stmt.executeQuery("select * from advertise");
+ResultSet rs=s.stmt.executeQuery("select * from registation_tbl");
 while(rs.next())
 {
 int t=rs.getInt("Advertise_Id");
